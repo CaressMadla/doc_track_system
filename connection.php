@@ -13,8 +13,6 @@
        die("Connection failed: " . $conn->connect_error);
    }
 
-   echo "Connected successfully to the database.";
-
    // Close the connection (Note: It's often not necessary to manually close the connection)
    $conn->close();
 ?>
