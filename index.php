@@ -7,21 +7,22 @@
     <h1>Database Connection Example</h1>
 
     <?php
-    // Database connection parameters
-    $servername = "localhost";
-    $username = "root"; // 
-    $password = ""; // 
-    $dbname = "doc_track_sys";
+    // Include the database connection
+    include 'connection.php';
 
-    // Create a connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    // Query to retrieve data from the database
+    $sql = "SELECT id, name, email FROM users";
+    $result = $conn->query($sql);
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
+    if ($result->num_rows > 0) {
+        echo "<ul>";
+        while ($row = $result->fetch_assoc()) {
+            echo "<li>ID: " . $row["id"] . " - Name: " . $row["name"] . " - Email: " . $row["email"] . "</li>";
+        }
+        echo "</ul>";
+    } else {
+        echo "No records found.";
     }
-
-    echo "Connected successfully to the database.";
 
     // Close the connection (Note: It's often not necessary to manually close the connection)
     $conn->close();
