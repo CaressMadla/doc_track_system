@@ -9,8 +9,8 @@
     <?php
     // Database connection parameters
     $servername = "localhost";
-    $username = "your_username";
-    $password = "your_password";
+    $username = "root"; // 
+    $password = ""; // 
     $dbname = "doc_track_sys";
 
     // Create a connection
