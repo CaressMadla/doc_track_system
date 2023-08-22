@@ -1,30 +1,39 @@
+<?php
+ require "connection.php"; 
+ ?>
+
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Database Connection Example</title>
-</head>
-<body>
-    <h1>Database Connection Example</h1>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <?php
-    // Database connection parameters
-    $servername = "localhost";
-    $username = "root"; // 
-    $password = ""; // 
-    $dbname = "doc_track_sys";
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
 
-    // Create a connection
-    $conn = new mysqli($servername, $username, $password, $dbname);
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
 
-    // Check connection
-    if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-    }
+    <title>Hello, world!</title>
+  </head>
 
-    echo "Connected successfully to the database.";
 
-    // Close the connection (Note: It's often not necessary to manually close the connection)
-    $conn->close();
-    ?>
-</body>
+  <body class="d-flex vw-100 vh-100 align-items-center justify-content-center">
+
+  
+    <button class="btn btn-primary">
+      <i class="fab fa-accessible-icon me-1"></i>Hello, world!
+    </button>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+  </body>
 </html>
+

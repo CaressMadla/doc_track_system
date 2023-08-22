@@ -1,22 +1,20 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
+   // Database connection parameters
+   $servername = "localhost";
+   $username = "root"; // 
+   $password = ""; // 
+   $dbname = "doc_track_sys";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+   // Create a connection
+   $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Create database
-$sql = "CREATE DATABASE myDB";
-if ($conn->query($sql) === TRUE) {
-  echo "Database created successfully";
-} else {
-  echo "Error creating database: " . $conn->error;
-}
+   // Check connection
+   if ($conn->connect_error) {
+       die("Connection failed: " . $conn->connect_error);
+   }
 
-$conn->close();
+   echo "Connected successfully to the database.";
+
+   // Close the connection (Note: It's often not necessary to manually close the connection)
+   $conn->close();
 ?>
