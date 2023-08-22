@@ -14,7 +14,7 @@
                         Sign Up
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="register.php">
+                        <form method="POST" action="register.php"> <!-- change register.php to register_process.php -->
                         <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
