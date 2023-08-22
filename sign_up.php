@@ -15,6 +15,10 @@
                     </div>
                     <div class="card-body">
                         <form method="POST" action="register.php">
+                        <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
+                            </div>
                             <div class="form-group">
                                 <label for="username">Username</label>
                                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
@@ -23,7 +27,8 @@
                                 <label for="password">Password</label>
                                 <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
                             </div>
-                            <button type="submit" class="btn btn-primary">Sign Up</button>
+                            <button type="submit" class="btn btn-primary">Sign Up</button> <p> 
+                                
                         </form>
                     </div>
                 </div>

@@ -6,8 +6,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
     // TODO: Store the user information in a database
     
+    echo "Registration successful! You can now log in.";
+
     // Redirect the user to the login page
     header("Location: index.php");
     exit(); // Ensure that the script stops executing after the redirection
+
 }
 ?>
