@@ -5,6 +5,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = password_hash($_POST["password"], PASSWORD_DEFAULT); // Hash the password for security
     
     // TODO: Store the user information in a database
+
+    // search sa GPT how to insert data into database PHP
     
     echo "Registration successful! You can now log in.";
 
