@@ -3,7 +3,8 @@
 <head>
     <title>Sign Up Form</title>
     <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     
 </head>
 <body>
     <div class="container mt-5">
@@ -14,7 +15,7 @@
                         Sign Up
                     </div>
                     <div class="card-body">
-                        <form method="POST" action="register.php"> <!-- change register.php to register_process.php -->
+                        <form method="POST" action="register_process.php"> <!-- change register.php to register_process.php -->
                         <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="text" class="form-control" id="email" name="email" placeholder="Enter your email">
